@@ -1,9 +1,15 @@
-// create a variable to hold the count. 
+// intitalize the count to 0 
+// listen for clicks on increment button 
+// increment the count to variable when the button is clicked
+// change the count-el in html to reflect the new count 
 
-let count = 0
+let countEl =  document.getElementById('count-el')
 
-console.log(count + " this is your count")
+let count = 0 
 
-let myAge = 30 
 
-console.log(myAge)
+function increment(){
+    count = count + 1
+    countEl = count
+    
+}
